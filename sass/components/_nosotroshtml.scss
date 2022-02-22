@@ -1,0 +1,30 @@
+/*      ESTILOS DE NOSOTROS HTML      */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .parrafoNosotros{
+        font-size: 30px;
+        padding-top: 80px;
+        padding-bottom: 150px;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        .shipping {
+            width: 100px;
+            padding-top: 70px;
+            padding-bottom: 70px;}
+            .envio {
+            font-size: 20px;
+            padding-bottom: 70px
+        }
+        
+    }
+        
+}
+
+/*     FIN DE ESTILOS DE NOSOTROS HTML   */

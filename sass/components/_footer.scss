@@ -1,0 +1,23 @@
+/*    ESTILOS GENERALES DEL FOOTER     */
+
+
+footer { padding-top: 70px;
+    background-color:black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        .logoIg{
+        width: 50px;
+        } 
+        .containerFooter {
+        text-align: center;
+        .linkIg {
+            text-decoration: none;
+            text-align: center;
+            color: white; 
+        }
+    }
+}
+
+/*   FIN DE ESTILOS GENERALES DEL FOOTER     */

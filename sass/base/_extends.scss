@@ -1,0 +1,12 @@
+/*    extends     */
+
+%display-flex {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+section {
+    background-color: white;
+    @extend %display-flex;
+}

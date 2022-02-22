@@ -1,0 +1,193 @@
+* {
+  font-family: 'Kanit', sans-serif; }
+
+/*   ESTILOS GENERALES DEL HEADER    */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  header h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    font-size: 20px; }
+  header .logo {
+    width: 50%;
+    animation-name: escalar;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    transform: scale(); }
+
+@keyframes escalar {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.4); } }
+
+nav ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 40px; }
+  nav ul li .subMenu {
+    text-align: left;
+    color: black;
+    display: none;
+    font-size: 20px; }
+
+/*   FIN DE ESTILOS GENERALES DEL HEADER    */
+/*  ESTILOES GENERALES DEL MAIN    */
+.container div .intro {
+  font-size: 25px;
+  padding-top: 40px; }
+
+.container div section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .container div section .shipping {
+    width: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px; }
+  .container div section .envio {
+    font-size: 20px;
+    padding-bottom: 70px; }
+
+/*   FIN DE ESTILOS GENERALES DEL MAIN   */
+/*    ESTILOS GENERALES DEL FOOTER     */
+footer {
+  padding-top: 70px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  footer .logoIg {
+    width: 50px; }
+  footer .containerFooter {
+    text-align: center; }
+    footer .containerFooter .linkIg {
+      text-decoration: none;
+      text-align: center;
+      color: white; }
+
+/*   FIN DE ESTILOS GENERALES DEL FOOTER     */
+/*      ESTILOS DE NOSOTROS HTML      */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .container .parrafoNosotros {
+    font-size: 30px;
+    padding-top: 80px;
+    padding-bottom: 150px; }
+  .container section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .container section .shipping {
+      width: 100px;
+      padding-top: 70px;
+      padding-bottom: 70px; }
+    .container section .envio {
+      font-size: 20px;
+      padding-bottom: 70px; }
+
+/*     FIN DE ESTILOS DE NOSOTROS HTML   */
+/*     ESTILOS DE UBICACION HTML       */
+body main .direccion {
+  font-size: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+/* FIN DE ESTILOS DE UBICACION HTML     */
+/*   ESTILOS DE CONTACTO HTML    */
+body main form {
+  background-color: black;
+  color: white; }
+  body main form h2 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  body main form fieldset {
+    font-size: 25px; }
+    body main form fieldset .botones {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+
+body .contactanos {
+  padding-top: 50px;
+  font-size: 30px; }
+
+/*  ESTILOS DE PRODUCTOS HTML     */
+.container {
+  display: grid;
+  grid-template-areas: "header header" "nav nav" "main main" "footer footer";
+  justify-content: center; }
+  .container header {
+    grid-area: header; }
+    .container header h1 {
+      background-color: black;
+      color: white;
+      text-align: center; }
+    .container header .logo {
+      width: 50%;
+      animation-name: escalar;
+      animation-iteration-count: infinite;
+      animation-duration: 15s;
+      animation-timing-function: linear;
+      transform: scale(); }
+
+@keyframes escalar {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.3); } }
+  .container nav {
+    grid-area: nav;
+    align-items: center; }
+  .container .main {
+    grid-area: main;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .container .main .section {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .container .main .section .shippin {
+        width: 100px;
+        padding-top: 70px;
+        padding-bottom: 70px; }
+      .container .main .section .envio {
+        font-size: 20px;
+        padding-bottom: 70px; }
+  .container footer {
+    grid-area: footer; }
+
+/*  operaciones en scss   */
+header h1 {
+  font-size: 20px; }
+
+/*     mapas    */
+main {
+  background-color: white; }
+
+footer {
+  background-color: black; }
+
+/*    extends     */
+section {
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
+
+section {
+  background-color: white; }

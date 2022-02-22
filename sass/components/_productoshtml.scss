@@ -1,0 +1,68 @@
+/*  ESTILOS DE PRODUCTOS HTML     */
+
+.container {
+    display: grid;
+    grid-template-areas: "header header"
+                            "nav nav"
+                            "main main"
+                            "footer footer";
+                            justify-content: center;
+                            header { grid-area: header;
+                                h1 {
+                                    background-color: black;
+                                    color: white;
+                                    text-align: center;
+                                }
+                                
+                                .logo {
+                                    width: 50%;
+                                    animation-name: escalar;
+                                    animation-iteration-count: infinite;
+                                    animation-duration: 15s;
+                                    animation-timing-function: linear;
+                                    transform: scale();
+                                }
+                                    
+                                    @keyframes escalar { 
+                                    from {
+                                        transform: scale(1.0);
+                                    }
+                                        
+                                    to {
+                                        transform: scale(1.3);
+                                    }
+                                    
+                                }
+                                
+
+                            }
+        nav {
+            grid-area: nav;
+            align-items: center;
+        }                    
+     .main{ 
+         grid-area: main;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+            .section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .shippin {
+                width: 100px;
+                padding-top: 70px;
+                padding-bottom: 70px;}
+                    .envio {
+                    font-size: 20px;
+                    padding-bottom: 70px;
+                }
+            }
+        }
+    footer {
+        grid-area: footer;
+
+    }
+
+}
